@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+  
+  .cities1 {
+  background-color: TEAL;
+  color: black;
+  margin: 20 px;
+  padding: 20 px;
+  }
+  
+  .button {
+	background:#7f8c8d;
+	color:#fff;
+	display:inline-block;
+	font-size:1.25em;
+	margin:20px;
+	padding:10px 0;
+	text-align:center;
+	width:200px;
+	text-decoration:none;
+	box-shadow:0px 3px 0px #373c3c;
+}
+ 
+.button span {
+	margin-right:10px;
+}
+ 
+/*Colores*/
+.button.blue {
+	background:#4a69bd;
+	box-shadow:0px 3px 0px #266792;
+}
+ 
+.button.yellow {
+	background:#cc8e35;
+	box-shadow:0px 3px 0px #b55704;
+}
+.button.purple {
+	background:#6F1E51;
+	box-shadow:0px 3px 0px #266792;
+}
+.button.green {
+	background:#009432;
+	box-shadow:0px 3px 0px #266792;
+}
+.button.red {
+	background:#c23616;
+	box-shadow:0px 3px 0px #266792;
+}
+
+.button.melon {
+	background:#e55039;
+	box-shadow:0px 3px 0px #266792;
+}
+ 
+.button.medium {
+	width:350px;
+}
+ 
+ 
+.button.large {
+	width:450px;
+}
+ 
+ 
+.button.radius {
+	border-radius:50px;
+}
+ 
+/*Efectos, Hover*/
+.button:hover {
+	box-shadow:0px 0px 0px;
+	padding-top:7px;
+}
+  
+  </style>
+<meta charset="UTF-8">
+<title>Examen Unidad 2 Hernández Corrales Javier Arturo</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+<h1>Examen Unidad 2 Hernández Corrales Javier Arturo</h1>
+<h1 th:text="${titulo}"></h1>
+<ul class="cities1" style="list-style-type:circle;">
+  <li> <a th:href="@{/ExamenUnidad2/clientes}" class="button blue medium radius">Clientes</a> </li>
+  <li> <a th:href="@{/ExamenUnidad2/computadoras}" class="button red medium radius">Computadoras</a> </li>
+  <li> <a th:href="@{/ExamenUnidad2/proveedores}" class="button purple medium radius">Proveedores</a> </li>
+  <li> <a th:href="@{/ExamenUnidad2/tickets}" class="button green medium radius">Tickets</a> </li>
+  <li> <a th:href="@{/ExamenUnidad2/venta}" class="button yellow medium radius">Venta</a> </li>
+</ul>
+
+</body>
+</html>
